@@ -15,7 +15,7 @@ languages and technologies.
 '''
 
 FOOTER = '''## About
-TIL template from [BitsPleaseMSI/til](https://github.com/BitsPleaseMSI/til)
+TIL template from [BitsPleaseMSI/til](https://github.com/BitsPleaseMSI/til) \\
 Inspired from [jbranchaud/til](https://github.com/jbranchaud/til).
 '''
 
@@ -71,7 +71,7 @@ def print_file (category_names, count, categories):
 ''')
 		# print the list of categories with links
 		for category in sorted (category_names):
-			file.write ('* [{0}](#{1})\n'.format (category.capitalize (), category))
+			file.write ('* [{0}](#{1})\n'.format (category, category))
 
 		if len (category_names) > 0:
 			file.write ('''
@@ -80,7 +80,7 @@ def print_file (category_names, count, categories):
 ''')
 		# print the section for each category
 		for category in sorted (category_names):
-			file.write ('### {0}\n'.format (category.capitalize ()))
+			file.write ('### {0}\n'.format (category))
 			file.write ('\n')
 			tils = categories[category]
 			for (title, filename) in sorted (tils):
