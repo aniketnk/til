@@ -25,5 +25,5 @@ _3 TILs and counting..._
 ---
 
 ## About
-TIL template from [BitsPleaseMSI/til](https://github.com/BitsPleaseMSI/til) \
+TIL template from [BitsPleaseMSI/til](https://github.com/BitsPleaseMSI/til)  
 Inspired from [jbranchaud/til](https://github.com/jbranchaud/til).

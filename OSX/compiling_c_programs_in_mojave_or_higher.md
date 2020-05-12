@@ -9,17 +9,18 @@ error: expected '=', ',', ';', 'asm' or '__attribute__' before '__OSX_AVAILABLE_
 ```
 
 ## Solution
-*Solution 1*
+
+*Solution 1*  
+Execute the following command before invoking the compiler.
 ```
 export CPATH=`xcrun --show-sdk-path`/usr/include
 ```
 
-*Solution 2*
+*Solution 2*  
 Alternatively you can make a soft-link to the above at `/usr/include` if you have SIP disabled(not recommended)
 ```
 sudo ln -s `xcrun --show-sdk-path`/usr/include /usr/include
 ```
 
-*Reference 1: [stackoverflow](https://apple.stackexchange.com/a/372600/374785)*
-
+*Reference 1: [stackoverflow](https://apple.stackexchange.com/a/372600/374785)*  
 *Reference 2: [stackoverflow](https://stackoverflow.com/a/58000319/9726680)*
